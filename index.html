@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Gallery</title>
+    <!-- Add any additional styles or links here -->
+    <style>
+        /* Optional: Add some styling to your gallery */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 @DaCoderMan Art Gallery 🎨</h1>
+    <div class="gallery">
+        <!-- Image gallery will go here -->
+    </div>
+    <script>
+        // Define your image file names here
+        const imageFiles = [
+            '1.jpg',
+            '2.jpeg',
+            '3.jpg',
+            '4.jpg',
+            '5.jpeg',
+            '6.jpg',
+            '7.jpeg',
+            '8.jpg',
+            '9.jpeg',
+            '10.jpg',
+            '11.jpg',
+            '12.jpeg',
+            '13.jpg',
+            '14.jpeg',
+            
+            '15.jpg',
+            '16.jpeg',
+            '17.jpeg',
+            '18.jpg',
+            '19.jpg',
+            '20.jpg',
+            '21.jpeg',
+            
+
+            // Add more image file names as needed
+        ];
+
+        // Create an image gallery
+        const galleryContainer = document.querySelector('.gallery');
+
+        // Loop through image files and create image elements
+        imageFiles.forEach((fileName) => {
+            const imgElement = document.createElement('img');
+            imgElement.src = `pictures/${fileName}`; // Adjust the path as needed
+            imgElement.alt = 'Artwork'; // Set an appropriate alt text
+            galleryContainer.appendChild(imgElement);
+        });
+    </script>
+</body>
+</html>
